@@ -1,0 +1,39 @@
+.wp-block-quote {
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 1rem;
+}
+.wp-block-quote.is-large p, .wp-block-quote.is-style-large p {
+    margin: 0;
+}
+.wp-block-quote>* {
+    margin-left: 1rem;
+}
+blockquote.wp-block-quote.is-style-red-qoute{
+    background: #00AF00;
+    color: #ffffff;
+}
+
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+    margin: 36px auto;
+    padding: 1rem 1.9rem;
+}
+
+.wp-block-quote.is-large cite,
+.wp-block-quote.is-large footer,
+.wp-block-quote.is-style-large cite,
+.wp-block-quote.is-style-large footer {
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+
+@media screen and (min-width: 644px) {
+    .wp-block-quote {
+        margin: 36px auto;
+    }
+}
+blockquote.wp-block-quote.is-style-red-qoute{
+	background: #00AF00;
+	color: #ffffff;
+}

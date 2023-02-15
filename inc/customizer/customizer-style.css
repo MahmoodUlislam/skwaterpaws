@@ -1,0 +1,16 @@
+li#customize-control-banner_paragraph_typography .customize-control-label,
+li#customize-control-banner_title_typography .customize-control-label,
+li#customize-control-banner_bg_settings .customize-control-label,
+li#customize-control-banner_button_colors .customize-control-label{
+    background: #fff;
+    padding: 10px;
+    display: block;
+    margin-top: 20px;
+}
+
+li#customize-control-banner_paragraph_typography .customize-control-label span,
+li#customize-control-banner_title_typography .customize-control-label span,
+li#customize-control-banner_bg_settings .customize-control-label span,
+li#customize-control-banner_button_colors .customize-control-label span{
+    margin-bottom: 0;
+}
