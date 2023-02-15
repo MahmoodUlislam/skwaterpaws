@@ -1,0 +1,91 @@
+#customize-controls .control-section-bizplus .accordion-section-title:hover,
+#customize-controls .control-section-bizplus .accordion-section-title:focus {
+    background-color: #fff;
+}
+
+.rtl .control-section-bizplus .accordion-section-title .cusbtn {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.accordion-section-title .cusbtn {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 8px;
+}
+
+a.button.cusbtn,
+a.button.cusbtn:visited {
+    background-color: #e6ff00;
+    border-color: #e6ff00;
+    color: #000000;
+    box-shadow: none;
+    line-height: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px 20px;
+    vertical-align: middle;
+    display: block;
+    text-align: center;
+    clear: both;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    outline: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+a.button.cusbtn:hover {
+    background-color: #191e23;
+    color: #fff;
+}
+
+p.one-click-demo-import {
+    background: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+li#accordion-section-theme_info>h3 {
+    background-color: #fff !important;
+    font-size: 16px;
+}
+
+.pro-features {
+  background: #fff;
+  padding: 15px;
+}
+.pro-features ul {
+    list-style: disc;
+}
+
+.pro-features ul li:first-child {
+    margin-top: 0;
+}
+
+.pro-features ul li:last-child {
+    margin-bottom: 0;
+}
+
+.pro-features ul li {
+    font-size: 16px;
+    font-style: normal;
+}
+
+.pro-features ul li a {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.customize-control.customize-control-sepearetor {
+    color: #000;
+}
+
+.pro-features ul li {
+    margin-left: 20px;
+    font-size: 18px;
+}
