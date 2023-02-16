@@ -10,7 +10,7 @@ Kirki::add_field( 'rs_pet_blog_config', [
 	'settings'    => 'primary_color',
 	'label'       => __( 'Primary Background Color', 'rs-pet-blog' ),
 	'section'     => 'rs_pet_blog_theme_color',
-	'default'     => '#00af00',
+	'default'     => '#23A6F0',
 	'transport'   => 'auto',
 	'output' => array(
 		array(
@@ -30,7 +30,7 @@ Kirki::add_field( 'rs_pet_blog_config', [
 	'label'       => __( 'Primary Text Color', 'rs-pet-blog' ),
 	'section'     => 'rs_pet_blog_theme_color',
 	'transport'   => 'auto',
-	'default'     => '#00af00',
+	'default'     => '#23A6F0',
 	'output' => array(
 		array(
 			'element'  => '.rs-pet-blog-standard-post__blog-meta>span.posted_by a i, .rs-pet-blog-standard-post__blog-meta>span.posted-on a, .widget-area .widget.widget_rss a.rsswidget, .widget ul li a:hover, .widget ul li a:visited, .widget ul li a:focus, .widget ul li a:active, .widget ol li a:hover, .widget ol li a:visited, .widget ol li a:focus, .widget ol li a:active, .rs-pet-blog-standard-post .rs-pet-blog-standard-post__full-summery a, a:hover, a:focus, a:active, span.opacity-none:before, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce ul.products li.product .price, span.opacity-none a:before',
@@ -48,7 +48,7 @@ Kirki::add_field( 'rs_pet_blog_config', [
 	'settings'    => 'footer_bg_color',
 	'label'       => __( 'Footer Background Color', 'rs-pet-blog' ),
 	'section'     => 'rs_pet_blog_theme_color',
-	'default'     => '#091a44',
+	'default'     => '#fff',
 	'transport'   => 'auto',
 	'output' => array(
 		array(
@@ -65,7 +65,7 @@ Kirki::add_field( 'rs_pet_blog_config', [
 	'settings'    => 'footer_title_color',
 	'label'       => __( 'Footer Title Color', 'rs-pet-blog' ),
 	'section'     => 'rs_pet_blog_theme_color',
-	'default'     => '#5cB85c',
+	'default'     => '#23A6F0',
 	'transport'   => 'auto',
 	'output' => array(
 		array(

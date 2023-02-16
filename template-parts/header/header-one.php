@@ -20,10 +20,11 @@
 						if ( $rs_pet_blog_description || is_customize_preview() ) :
 							?>
 						<p class="site-description"><?php echo esc_html( $rs_pet_blog_description ); /* WPCS: xss ok. */ ?></p>
-							<?php
+						<?php
 					endif;
 					?>
 				</div><!-- .site-branding -->
+	
 			</div>
 			<div class="col-md-9 m-auto align-self-center text-right">
 				<div class="cssmenu text-right" id="cssmenu">
@@ -32,6 +33,7 @@
 						array(
 							'theme_location'    => 'main-menu',
 							'container'         => 'ul',
+							'sort_order' => 'ASC',
 						)
 					);
 					?>

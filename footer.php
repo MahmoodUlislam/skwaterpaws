@@ -9,7 +9,7 @@
  * @package RS Pet Blog
  */
 
-$show_footer_social_links = get_theme_mod('show_footer_social_links', false);
+$show_footer_social_links = get_theme_mod('show_footer_social_links', true);
 ?>
 </div><!-- #content -->
 
@@ -24,10 +24,16 @@ $show_footer_social_links = get_theme_mod('show_footer_social_links', false);
 					<div class="site-info text-center">
 						<div class="site-copyright-text d-inline-block">
 						<?php
-						echo wp_kses_post( get_theme_mod('copyright_text', __( 'Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2022. All rights reserved.', 'rs-pet-blog' )));
+						echo wp_kses_post( get_theme_mod('copyright_text', __( 'Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2023. All rights reserved to Saskatoon Waterpaws', 'Saskatoon Waterpaws' )));
 						?>
 						</div>
-						<span class="opacity-none"><a href="<?php echo esc_url(rs_pet_blog_author_uri());?>"><?php esc_html_e( 'Bearded Dragon Society', 'rs-pet-blog' );?></a></span>
+						<?php if (true === $show_footer_social_links) { ?>
+						<div class="footer-social-links d-inline-block">
+							<?php
+							$facebook_link = get_theme_mod('facebook_link', '#');
+							
+							$instagram_link = get_theme_mod('instagram_link', '#');
+						}?>
 					</div><!-- .site-info -->
 				</div>
 			</div>
