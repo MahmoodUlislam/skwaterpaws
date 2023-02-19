@@ -6293,7 +6293,23 @@ span.dot {
 .rs-pet-blog-standard-post .post-gallery .owl-nav button.owl-prev {
   left: 0.625rem;
 }
-
+.heroPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroPage .heroImage {
+  background: url("../../assets/images/heroImage.png") no-repeat center center;
+  background-size: cover;
+  height: 25vh;
+  width: 100%;
+  position: relative;
+}
+.cardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .rs-pet-blog-single-page .entry-footer a {
   display: inline-block;
   padding: 0.625rem 1.25rem;

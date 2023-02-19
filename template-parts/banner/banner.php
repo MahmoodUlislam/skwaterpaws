@@ -3,12 +3,14 @@
  * RS Pet Blog Hero Home two
  */
 
-$banner_title = get_theme_mod('banner_title', __('Welcome to Reptiles World', 'rs-pet-blog'));
-$banner_description = get_theme_mod('banner_descriptions', __('Simply dummy text of the printing and typesetting industry.
-has been theindustry\'s standard dummy text ever since the
-1500s, when an unknownprinter', 'rs-pet-blog'));
+$banner_title = get_theme_mod('banner_title', __('Saskatoon Waterpaws', 'backed by Saskatchewan Polytechnic'));
+$banner_description = get_theme_mod('banner_descriptions', __('Main services of Saskatoon Waterpaws:
+1.	Hydrotherapy and Rehabilitation for pets
+2.	Recreational swimming for pets
+3.	Pet grooming service
+', 'Saskatoon Waterpaws'));
 $get_banner_image = get_theme_mod('banner_image');
-$button_text = get_theme_mod('banner_button_text', __( 'Discover', 'rs-pet-blog' ));
+$button_text = get_theme_mod('banner_button_text', __( 'Discover', 'Saskatoon Waterpaws' ));
 $button_link = get_theme_mod('banner_button_link', '#');
 ?>
 <section id="hero-section" class="banner-section">

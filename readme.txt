@@ -1,15 +1,33 @@
-=== RS Pet Blog ===
-Contributors: rswpthemes
+=== Saskatoon Waterpaws ===
+Contributors: Saskatchewan Polytechnic
 Tags: blog, news, e-commerce, grid-layout, one-column, two-columns, three-Columns, four-Columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, footer-widgets, flexible-header, theme-options, translation-ready, featured-images, block-styles, wide-blocks, sticky-post, featured-image-header, front-page-post-form, full-width-template, post-formats, threaded-comments
 Requires at least: 5.0
 Tested up to: 6.1
 Requires PHP: 5.6
 Stable tag: 2.0.2
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 
 == Description ==
-RS PET BLOG is an easy-to-use WordPress Theme that is designed for those people who would like to start a blog about pets. But, it can be used for any kind of niche. This theme comes with a minimal look and responsive design. It has all the necessary options in the free version which are enough to launch your blog site without writing a single line of code. It is a speed-optimized theme that helps your website load within a blink of an eye and provides a great user experience to your visitors. The theme is developed with SEO-optimized codes and is schema.org markup ready to help your website rank higher in Google and other search engines. Furthermore, this theme is fully compatible with the popular WooCommerce plugin to allow you to sell your product via your website.
+The goals of the website and the goals of the users including personas for Saskatoon Waterpaws: 
+
+Goals of the Website:
+•	To tell customers about the shop's services through written information and visual presentation.
+•	To advertise the company, there will be an online appointment service for the customer in the future.
+•	To build trust and credibility with pet owners.
+•	To enhance user experience with helpful resources and intuitive design.
+•	To provide information about the payment system.
+•	To provide contact details to customers
+•	To provide fast interactions to the users and make a dynamic SEO-friendly website.
+•	To stand out in the market among the other competitor with an eye-catching and dynamic website.
+•	To increase engagement with pet owners through social media, a blog, and a newsletter.
+
+User Personas:
+•	Busy Pet Owner: This persona is a busy pet owner who wants quick and easy access to information about the services offered by the shop and a simple way to book appointments. They are interested in the benefits of the services for their pet and may be seeking convenience and efficiency.
+•	Health-Conscious Pet Owner: This persona is a pet owner who is concerned about the health and well-being of their pet. They want to learn more about the services offered by the shop and the benefits of each service for their pet and are likely to take their time researching and comparing different options.
+•	Experienced Pet Owner: This persona is an experienced pet owner who is familiar with grooming, swimming, and hydrotherapy for pets. They want to book appointments quickly and efficiently as well as may be seeking the expertise and experience of the shop's staff.
+•	New Pet Owner: This persona is a new pet owner who is unfamiliar with grooming, swimming, and hydrotherapy for pets. They want to learn more about the services offered by the shop and what to expect and are likely to be seeking information and guidance.
+
 
 == Frequently Asked Questions ==
 

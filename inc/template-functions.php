@@ -153,6 +153,8 @@ function rs_pet_blog_before_default_page_markup() {
 			<div class="container">
 				<div class="row">
 					<div class="<?php echo esc_attr( $blogcontent ); ?>">
+					</div>
+					<div class="<?php echo esc_attr( $blogcontent ); ?>">
 	<?php
 }
 add_action( 'rs_pet_blog_before_default_page', 'rs_pet_blog_before_default_page_markup' );
