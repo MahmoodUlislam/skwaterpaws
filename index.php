@@ -17,9 +17,10 @@ if (true === $show_hide_banner_section) {
 	get_template_part( 'template-parts/banner/banner', 'section');
 }
 ?>
+
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-	<?php
+		<?php
 	do_action( 'rs_pet_blog_before_default_page' );
 	if ( have_posts() ) :
 		echo '<div class="row masonaryactive">';
@@ -28,14 +29,15 @@ if (true === $show_hide_banner_section) {
 			the_post();
 			get_template_part( 'template-parts/content/content', get_post_type() );
 			endwhile;
-		echo '</div>';
+			echo '</div>';
 			rs_pet_blog_navigation();
-		else :
+			else :
 			get_template_part( 'template-parts/content/content', 'none' );
 		endif;
 		do_action( 'rs_pet_blog_after_default_page' );
 		?>
 	</main><!-- #main -->
+	
 </div>
 <?php
 get_footer();

@@ -24,8 +24,10 @@ $post_el_is_on = array(
 );
 ?>
 <div class="<?php echo esc_attr( $post_column_layout ); ?> blog-grid-layout">
+
 	<article id="post-<?php the_ID(); ?>" <?php post_class( $post_classes ); ?>>
 		<div class="rs-pet-blog-standard-post__entry-content text-left">
+			
 			<?php if ( has_post_thumbnail() ) : ?>
 				<div class="rs-pet-blog-standard-post__thumbnail post-header">
 					<?php

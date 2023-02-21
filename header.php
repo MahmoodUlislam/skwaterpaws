@@ -19,6 +19,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'rs-pet-blog' ); ?></a>
+	
 	<?php
 	if ( function_exists( 'wp_body_open' ) ) {
 		wp_body_open();

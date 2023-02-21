@@ -1152,8 +1152,8 @@ blockquote.wp-block-quote.is-style-red-qoute p {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1199,8 +1199,8 @@ blockquote.wp-block-quote.is-style-red-qoute p {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -1rem;
+  margin-left: -1rem;
 }
 
 .no-gutters {
@@ -6297,18 +6297,107 @@ span.dot {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 12rem;
+  background-color: #23a6f0;
 }
 .heroPage .heroImage {
-  background: url("../../assets/images/heroImage.png") no-repeat center center;
-  background-size: cover;
-  height: 25vh;
+  background: url("./assets/images/heroImage.png") no-repeat center center;
+  background-size: fit;
+  height: 72vh;
   width: 100%;
-  position: relative;
+  margin-bottom: 2rem;
 }
-.cardSection {
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cardcontent .text {
+  height: 4.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cardContent .seeMore {
+  display: inline-block;
+  margin-left: 5px;
+  color: blue;
+  cursor: pointer;
+}
+.cardSection1 {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4rem 0;
+}
+.cardSection1 .card {
+  width: 25vw;
+  height: 52vh;
+  overflow: hidden;
+}
+.cardSection1 .card .cardImageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardSection1 .card .cardImage {
+  background: url("./assets/images/vector.png") no-repeat center center;
+  background-size: fit;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.cardSection2 {
+  background-color: #23a6f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+.cardSection2 .card {
+  width: 25vw;
+  height: 52vh;
+  overflow: hidden;
+}
+.cardSection2 .card .cardContent a {
+  color: #fff;
+}
+.cardSection2 .card .cardImageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardSection2 .card .cardImage {
+  background: url("./assets/images/vectorW.png") no-repeat center center;
+  background-size: fit;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.midSection1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 10rem;
+}
+.midSection1 .midSection1Content {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem;
+}
+.midSection1 .midsection1Image {
+  background: url("./assets/images/dog-swimming.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  width: 400px;
+  margin: 2rem;
 }
 .rs-pet-blog-single-page .entry-footer a {
   display: inline-block;
@@ -8021,7 +8110,6 @@ p.site-description {
 
 header.site-header {
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
 }
 
 .header-one .menu-area {
