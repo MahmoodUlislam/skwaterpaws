@@ -44,38 +44,38 @@ get_header();
                 <h3>
                     Hydrotherapy and Rehabilitation
                 </h3>
-                <p id="pText" class="text">
-
-                    <?php $content = " We believe that a healthy dog is a happy dog. With hydrotherapy sessions at our heated
-                    indoor pool,
-                    the recovery of your injured best friend can take place at a faster pace. Get in touch with us for
-                    more in-depth information about canine hydrotherapy.";
-                    $short_content = substr($content, 0, 150) . '...';
-
-                    // How to get PHP variable in Javascript????
-
-                    echo $short_content . '<span class="seeMore" onclick="expand(\'echo $content\')">See
-                    more</span></p>';
-
-                    echo '<script>
-                function expand(content) {
-                    const text = document.querySelector(\'.text\');
-                            if (text !== null) {
-                                text.style.height = \'auto\';
-                                text.style.overflow = \'visible\';
-                                const seeMore = text.querySelector(\'.seeMore\');
-                                    if (seeMore !== null) {
-                                        seeMore.style.display = \'none\';
-                                        console.log(content);
-                                        text.innerHTML = content;
-                                    }
-                                }
-                            }
-                </script>';
+                <p id="pText11" class="<?php echo ($seeMore == true) ? 'longText' : 'shortText'; ?>">
+                    <?php
+                    $seeMore = false;
+                    $longContent11 = "We believe that a healthy dog is a happy dog. With hydrotherapy sessions at our heated indoor pool, the recovery of your injured best friend can take place at a faster pace. Get in touch with us for more in-depth information about canine hydrotherapy.";
+                    $shortContent11 = substr($longContent11, 0, 150) . '...';
+                    if ($seeMore != true) {
+                        echo $shortContent11 . '<span class="seeMore" onclick="expand()">See more</span>';
+                    } else {
+                        echo $longContent11;
+                    }
                     ?>
+                </p>
+
+                <?php
+                echo '<script>
+                function expand() {
+                  const text = document.querySelector(\'#pText11\');
+                  if (text !== null) {
+                    text.classList.remove(\'shortText\');
+                    text.classList.add(\'longText\');
+                    let seeMore = text.querySelector(\'.seeMore\');
+                    if (seeMore !== null) {
+                      seeMore.style.display = \'none\';
+                     text.innerHTML = \'' . $longContent11 . '\';
+                    }
+                  }
+                }
+              </script>';
+                ?>
             </div>
         </div>
-        <div class="card">
+        <div class=" card">
             <div class="cardImageSection">
 
                 <div class="cardImage">
@@ -86,12 +86,39 @@ get_header();
                 <h3>
                     Recreational Swimming for Pets
                 </h3>
-                <p>
-                    No matter the season, dogs need their exercise, and indoor swimming is a great alternative to
+
+                <p id="pText12" class="<?php echo ($seeMore12 == true) ? 'longText' : 'shortText'; ?>">
+                    <?php
+                    $seeMore12 = false;
+                    $longContent12 = "No matter the season, dogs need their exercise, and indoor swimming is a great alternative to
                     exercising outdoors in our cold Saskatchewan winters. Swim your winter blues away! Doggie blow
-                    dryers available on site to avoid the sniffles.
+                    dryers available on site to avoid the sniffles.";
+                    $shortContent12 = substr($longContent12, 0, 150) . '...';
+                    if ($seeMore12 != true) {
+                        echo $shortContent12 . '<span class="seeMore" onclick="expand2()">See more</span>';
+                    } else {
+                        echo $longContent12;
+                    }
+                    ?>
                 </p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+
+                <?php
+                echo '<script>
+                function expand2() {
+                  const text1 = document.querySelector(\'#pText12\');
+                  if (text1 !== null) {
+                    text.classList.remove(\'shortText\');
+                    text.classList.add(\'longText\');
+                    let seeMore12 = text.querySelector(\'.seeMore\');
+                    
+                    if (seeMore12 !== null) {
+                      seeMore.style.display = \'none\';
+                     text1.innerHTML = \'' . $longContent12 . '\';
+                    }
+                  }
+                }
+              </script>';
+                ?>
             </div>
         </div>
         <div class="card">
@@ -106,7 +133,8 @@ get_header();
                     Pet Grooming Service
                 </h3>
                 <p>
-                    Dogs are big on instinct and they bounce off the happy energy we have when we’re around them. Bubbly
+                    Dogs are big on instinct and they bounce off the happy energy we have when we’re around them.
+                    Bubbly
                     and cuddly go together well. Bring your fine furry friends over for some serious pampered dog
                     grooming at our salon.
                 </p>
@@ -144,8 +172,10 @@ get_header();
                     Hydrotherapy and Rehabilitation
                 </h3>
                 <p>
-                    We believe that a healthy dog is a happy dog. With hydrotherapy sessions at our heated indoor pool,
-                    the recovery of your injured best friend can take place at a faster pace. Get in touch with us for
+                    We believe that a healthy dog is a happy dog. With hydrotherapy sessions at our heated indoor
+                    pool,
+                    the recovery of your injured best friend can take place at a faster pace. Get in touch with us
+                    for
                     more in-depth information about canine hydrotherapy.
                 </p>
                 <a href="#" class="btn btn-primary">Learn More</a>
@@ -182,7 +212,8 @@ get_header();
                     Pet Grooming Service
                 </h3>
                 <p>
-                    Dogs are big on instinct and they bounce off the happy energy we have when we’re around them. Bubbly
+                    Dogs are big on instinct and they bounce off the happy energy we have when we’re around them.
+                    Bubbly
                     and cuddly go together well. Bring your fine furry friends over for some serious pampered dog
                     grooming at our salon.
                 </p>

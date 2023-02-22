@@ -6314,11 +6314,29 @@ span.dot {
   align-items: center;
   text-align: center;
 }
-.cardcontent .text {
-  height: 4.5em;
+.cardcontent .longText {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  max-height: auto;
+}
+.cardContent .shortText {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  max-height: 400px;
 }
 .cardContent .seeMore {
   display: inline-block;
