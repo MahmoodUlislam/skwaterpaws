@@ -5407,8 +5407,7 @@ blockquote.wp-block-quote.is-style-red-qoute p {
 }
 
 .site-main {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  margin: 0 auto;
 }
 
 .lg-display-none {
@@ -6417,6 +6416,13 @@ span.dot {
   width: 400px;
   margin: 2rem;
 }
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 10rem;
+}
 .rs-pet-blog-single-page .entry-footer a {
   display: inline-block;
   padding: 0.625rem 1.25rem;
@@ -6452,8 +6458,7 @@ span.dot {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 .page-links {

@@ -8,11 +8,11 @@
 get_header();
 ?>
 <div id="primary" class="content-area section-padding">
-	<main id="main" class="site-main">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<?php
+    <main id="main" class="site-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php
 					while ( have_posts() ) :
 						the_post();
 						get_template_part( 'template-parts/content/content', 'page' );
@@ -22,10 +22,10 @@ get_header();
 						endif;
 					endwhile; // End of the loop.
 					?>
-				</div>
-			</div>
-		</div>
-	</main><!-- #main -->
+                </div>
+            </div>
+        </div>
+    </main><!-- #main -->
 </div><!-- #primary -->
 <?php
 get_footer(); ?>

@@ -1,19 +1,29 @@
 <?php
+
 /**
  * Template part for displaying page content in page.php
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
+ * 
+ * @package RS Pet Blog
+ * 
  * $image_source
  */
 ?>
-<?php
-    $image_source = "https://commons.wikimedia.org/wiki/File:Programming_code.jpg";
-?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'rs-pet-blog-single-page' ); ?>>
-	
 
-	
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
+    <div class="entry-content">
+        <?php
+        the_content();
+
+        wp_link_pages(array(
+            'before' => '<div class="page-links">' . esc_html__('Pages:', 'skwaterpaws'),
+            'after'  => '</div>',
+        ));
+        ?>
+    </div><!-- .entry-content -->
+
+
 </article><!-- #post-<?php the_ID(); ?> -->
-
-
