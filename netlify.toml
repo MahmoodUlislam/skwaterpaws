@@ -1,18 +1,15 @@
-# Install dependencies and build the site
 [build]
   command = "npm install && npm run build && wp core download --version=5.9 --path=wp"
   publish = "dist"
 
-# Redirects for old URLs
-# [[redirects]]
-#   from = "/old-url"
-#   to = "/new-url"
-#   status = 301
+[[redirects]]
+  from = "/old-url"
+  to = "/new-url"
+  status = 301
 
-# Environment variables for WordPress
 [context.production.environment]
-  WP_HOME = "http://skwaterpaws.local/"
-  WP_SITEURL = "http://skwaterpaws.local/wp-admin/"
+  WP_HOME = "https://example.com"
+  WP_SITEURL = "https://example.com/wp"
 
 [context.deploy-preview.environment]
   WP_HOME = "https://deploy-preview-$COMMIT_REF--example.netlify.app"
