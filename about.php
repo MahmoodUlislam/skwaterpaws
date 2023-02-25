@@ -1,23 +1,12 @@
+<!-- make an about page in php for wordpress -->
 <?php
-
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress rs_pet_blogt of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package RS Pet Blog
+ * Template Name: About
  */
-get_header();
 ?>
-<!-- add code for adding page -->
+<?php get_header(); ?>
 <div id="primary" class="content-area section-padding">
     <main id="main" class="site-main">
-
         <?php
         while (have_posts()) :
             the_post();
@@ -28,8 +17,8 @@ get_header();
             endif;
         endwhile; // End of the loop.
         ?>
-
     </main><!-- #main -->
+</div><!-- #primary -->
 
-    <?php
-    get_footer(); ?>
+
+<?php get_footer(); ?>
