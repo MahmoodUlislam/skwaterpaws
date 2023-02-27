@@ -8551,7 +8551,7 @@ header.archive-page-header h1.page-title {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
   .post-author {
     display: block !important;
   }
@@ -8633,7 +8633,7 @@ header.archive-page-header h1.page-title {
   padding-bottom: 20px;
   border-bottom: 1px solid #f1f1f1;
   margin-top: 50px;
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .d-flex.single-post-navigation {
@@ -8781,7 +8781,7 @@ header.archive-page-header h1.page-title {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 47.9375rem) {
+/* @media only screen and (max-width: 47.9375rem) {
   .site-info {
     text-align: center;
   }
@@ -9406,7 +9406,7 @@ section.no-results.not-found .search-form input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
-ul.wp-block-categories-list.wp-block-categories li.cat-item {
+/* ul.wp-block-categories-list.wp-block-categories li.cat-item {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #f1f1f1;
@@ -9425,10 +9425,10 @@ p.wp-block-tag-cloud a {
 
 p.wp-block-tag-cloud a:hover {
   color: #23a6f0;
-}
+} */
 
 /*Blocks ALign*/
-.alignfull {
+/* .alignfull {
   width: 100vw;
   max-width: 100vw;
   margin-left: calc(-50vw + 50%) !important;
@@ -9438,7 +9438,7 @@ p.wp-block-tag-cloud a:hover {
   width: calc(100% + 395px);
   max-width: calc(100% + 395px);
   margin-left: -197.5px !important;
-}
+} */
 
 /*.alignwide,
 .alignfull {
@@ -9447,16 +9447,16 @@ p.wp-block-tag-cloud a:hover {
     width: 100vw;
 }*/
 
-@media (max-width: 920px) {
+/* @media (max-width: 920px) {
   .alignwide {
     margin: 32px calc((767px - 920px) / 2);
     max-width: 920px;
     width: 920px;
   }
-}
+} */
 
 /*==================================Hero two section start style======================================*/
-section.banner-section {
+/* section.banner-section {
   background: #f1f1f1;
   padding: 70px 0;
 }
@@ -9531,9 +9531,9 @@ section.banner-section {
     margin: 0 0 2rem 0;
     padding-right: 0;
   }
-}
+} */
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .banner-title {
     font-size: 40px;
     line-height: 52px;
@@ -9544,8 +9544,50 @@ section.banner-section {
   .search-box-banner {
     margin-bottom: 27px !important;
   }
+  .heroPage {
+    padding: 0 4rem;
+  }
+  .heroPage .heroImage {
+    background: url("./assets/images/heroImage.png") no-repeat center;
+    background-size: contain;
+    height: 70vh;
+    width: 40vw;
+    /* margin-bottom: 2rem; */
+  }
+  .cardSection1 {
+    flex-direction: column;
+  }
+  .cardSection2 {
+    flex-direction: column;
+  }
+  .cardSection1 .card {
+    width: 90vw;
+    height: 400px;
+    overflow: hidden;
+  }
+  .cardSection2 .card {
+    width: 90vw;
+    height: 400px;
+    overflow: hidden;
+  }
 }
-
+@media only screen and (max-width: 480px) {
+  .heroPage {
+    padding: 0 0.5rem;
+  }
+  .heroPage .heroImage {
+    display: none;
+  }
+  .cardsection1 .card {
+    height: 90vh;
+    width: 90vw;
+  }
+  .cardsection2 .card {
+    height: 90vh;
+    width: 90vw;
+  }
+}
+/* 
 span.opacity-none a {
   font-size: 0;
   position: relative;
@@ -9565,4 +9607,4 @@ span.opacity-none a:before {
 .discover-me-button a:hover {
   background: #000000;
   color: #ffffff;
-}
+} */
