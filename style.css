@@ -6585,7 +6585,11 @@ a.fa.fa-search.searchicon:focus {
   box-sizing: border-box;
   transition: 0.4s;
 }
-
+#cssmenu ul li:last-child {
+  background-color: #66ff00;
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+}
 #cssmenu:after,
 #cssmenu > ul:after {
   content: ".";
@@ -6640,7 +6644,7 @@ a.fa.fa-search.searchicon:focus {
 }
 
 #cssmenu > ul > li:hover > a {
-  color: #23a6f0;
+  color: #000;
 }
 
 #cssmenu > ul > li.has-sub > a {
@@ -8755,8 +8759,8 @@ header.archive-page-header h1.page-title {
   width: 2rem;
   height: 2rem;
   line-height: 2rem;
-  right: 1.25rem;
-  bottom: 1.25rem;
+  left: 2.25rem;
+  bottom: 2.25rem;
   position: fixed;
   z-index: 5;
   text-align: center;
