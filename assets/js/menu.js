@@ -1,6 +1,6 @@
-(function($) {
+(function ($) {
     "use strict";
-    $.fn.menumaker = function(options) {
+    $.fn.menumaker = function (options) {
         var cssmenu = $(this),
             settings = $.extend({
                 title: "Menu",
@@ -8,11 +8,11 @@
                 breakpoint: 768,
                 sticky: false
             }, options);
-        return this.each(function() {
+        return this.each(function () {
             cssmenu.find('li ul').parent().addClass('has-sub');
             if (settings.format != 'select') {
-                cssmenu.prepend('<a href="#" id="menu-button">' + settings.title + '</a>');
-                $(this).find("#menu-button").on('keydown', function(e) {
+                cssmenu.prepend('<a href="#" id="menu-button"></a>');
+                $(this).find("#menu-button").on('keydown', function (e) {
                     var tabKey = e.keyCode === 9;
                     var shiftKey = e.shiftKey;
                     if ($(this).hasClass('menu-opened')) {
@@ -23,7 +23,7 @@
                         };
                     }
                 });
-                $(this).find("#menu-button").on('click', function() {
+                $(this).find("#menu-button").on('click', function () {
                     $(this).toggleClass('menu-opened');
                     var mainmenu = $(this).next('ul');
                     if (mainmenu.hasClass('open')) {
@@ -35,7 +35,7 @@
                         }
                     }
                 });
-                var multiTg = function() {
+                var multiTg = function () {
                     function submenuButton() {
                         var buttonTag = 'span';
                         if ($(window).width() > settings.breakpoint) {
@@ -49,7 +49,7 @@
                         //     $('.submenu-button').siblings('.submenu-button').remove('.submenu-button');
                         // }
                         var hasClicked = false;
-                        cssmenu.find('.submenu-button').on('click', function(e) {
+                        cssmenu.find('.submenu-button').on('click', function (e) {
                             $(this).toggleClass('submenu-opened');
                             if ($(this).siblings('ul').hasClass('open')) {
                                 $(this).siblings('ul').removeClass('open').hide();
@@ -72,7 +72,7 @@
                     "selected": "selected",
                     "value": ""
                 });
-                cssmenu.find('a').each(function() {
+                cssmenu.find('a').each(function () {
                     var element = $(this),
                         indentation = "";
                     for (i = 1; i < element.parents('ul').length; i++) {
@@ -80,12 +80,12 @@
                     }
                     selectList.append('<option value="' + $(this).attr('href') + '">' + indentation + element.text() + '</option');
                 });
-                selectList.on('change', function() {
+                selectList.on('change', function () {
                     window.location = $(this).find("option:selected").val();
                 });
             }
             if (settings.sticky === true) cssmenu.css('position', 'fixed');
-            var resizeFix = function() {
+            var resizeFix = function () {
                 if ($(window).width() > settings.breakpoint) {
                     cssmenu.find('ul').show();
                     cssmenu.removeClass('small-screen');

@@ -6301,7 +6301,7 @@ span.dot {
 }
 .heroPage .heroImage {
   background: url("./assets/images/heroImage.png") no-repeat center center;
-  background-size: fit;
+  background-size: contain;
   height: 72vh;
   width: 100%;
   margin-bottom: 2rem;
@@ -6422,6 +6422,9 @@ span.dot {
   justify-content: center;
   align-items: center;
   margin: 2rem 10rem;
+}
+.contactForm form {
+  width: 60vw;
 }
 .rs-pet-blog-single-page .entry-footer a {
   display: inline-block;
@@ -9573,6 +9576,12 @@ p.wp-block-tag-cloud a:hover {
     width: 90vw;
     height: 400px;
     overflow: hidden;
+  }
+  .contactForm form {
+    width: 80vw;
+  }
+  .contactForm h2 {
+    width: 80vw;
   }
 }
 @media only screen and (max-width: 480px) {
